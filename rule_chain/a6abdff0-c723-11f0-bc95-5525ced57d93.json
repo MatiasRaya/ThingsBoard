@@ -24,10 +24,6 @@
       "type" : "Post telemetry"
     }, {
       "fromIndex" : 2,
-      "toIndex" : 1,
-      "type" : "Post attributes"
-    }, {
-      "fromIndex" : 2,
       "toIndex" : 3,
       "type" : "RPC Request from Device"
     }, {
@@ -87,6 +83,7 @@
       "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
     }, {
       "additionalInfo" : {
+        "description" : null,
         "layoutX" : 825,
         "layoutY" : 52
       },
@@ -94,10 +91,10 @@
         "processingSettings" : {
           "type" : "ON_EVERY_MESSAGE"
         },
-        "scope" : "CLIENT_SCOPE",
+        "scope" : "SHARED_SCOPE",
         "notifyDevice" : false,
         "sendAttributesUpdatedNotification" : false,
-        "updateAttributesOnlyOnValueChange" : true
+        "updateAttributesOnlyOnValueChange" : false
       },
       "configurationVersion" : 3,
       "createdTime" : 0,
