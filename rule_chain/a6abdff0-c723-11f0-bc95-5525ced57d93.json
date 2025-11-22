@@ -232,7 +232,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "var sharedAttrs = {\n\tSN: \"0000-00000\",\n    APN: \"prueba\",\n    longitude: 0.000000,\n    latitude: 0.000000,\n    SSID: \"prueba\",\n    PSWD: \"prueba\",\n    isWiFi: false,\n    isGPRS: false\n};\n\nmetadata[\"scope\"] = \"CLIENT_SCOPE\";\n\nreturn {\n    msg: sharedAttrs,\n    metadata: metadata,\n    msgType: \"POST_ATTRIBUTES_REQUEST\"\n};\n"
+        "tbelScript" : "var sharedAttrs = {\n\tSN: \"0000-00000\",\n    APN: \"prueba\",\n    longitude: 0.000000,\n    latitude: 0.000000,\n    SSID: \"prueba\",\n    PSWD: \"prueba\",\n    isWiFi: false,\n    isGPRS: false\n};\n\nmetadata[\"scope\"] = \"SHARED_SCOPE\";\n\nreturn {\n    msg: sharedAttrs,\n    metadata: metadata,\n    msgType: \"POST_ATTRIBUTES_REQUEST\"\n};\n"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -257,7 +257,7 @@
         "processingSettings" : {
           "type" : "ON_EVERY_MESSAGE"
         },
-        "scope" : "CLIENT_SCOPE",
+        "scope" : "SHARED_SCOPE",
         "notifyDevice" : false,
         "sendAttributesUpdatedNotification" : false,
         "updateAttributesOnlyOnValueChange" : false
